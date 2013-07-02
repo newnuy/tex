@@ -25,6 +25,31 @@
 % for font short name
 \newfontfamily{\CZ}{Zapfino}
 
+% for CJK fonts
+\usepackage{xeCJK}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+\setCJKsansfont{STSong}
+\setCJKmainfont{STFangsong}
+% for CJK font short name
+\setCJKfamilyfont{STSong}{STSong}
+\newcommand{\CS}{\CJKfamily{STSong}}                  % 华文宋体
+\setCJKfamilyfont{STHeiti}{STHeiti}
+\newcommand{\CH}{\CJKfamily{STHeiti}}                 % 华文黑体
+\setCJKfamilyfont{STKaiti}{STKaiti}
+\newcommand{\CK}{\CJKfamily{STKaiti}}                 % 华文楷体
+\setCJKfamilyfont{STFangsong}{STFangsong}
+\newcommand{\CF}{\CJKfamily{STFangsong}}              % 华文仿宋
+\setCJKfamilyfont{STLiti}{STLiti}
+\newcommand{\CL}{\CJKfamily{STLiti}}                  % 华文隶体
+\setCJKfamilyfont{STXingkai}{STXingkai}
+\newcommand{\CX}{\CJKfamily{STXingkai}}               % 华文行楷
+\setCJKfamilyfont{STXinwei}{STXinwei}
+\newcommand{\CW}{\CJKfamily{STXinwei}}                % 华文新魏
+\setCJKfamilyfont{WenQuanYiMicroHei}{WenQuanYi Micro Hei}
+\newcommand{\CWN}{\CJKfamily{WenQuanYiMicroHei}}      % 文泉驿微米黑, WqyNormal
+\setCJKfamilyfont{WenQuanYiMicroHeiMono}{WenQuanYi Micro Hei Mono}
+\newcommand{\CWM}{\CJKfamily{WenQuanYiMicroHeiMono}}  % 文泉驿等宽微米黑, WqyMono
+
 % by me end
 
 
