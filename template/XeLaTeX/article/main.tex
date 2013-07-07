@@ -50,6 +50,15 @@
 \setCJKfamilyfont{WenQuanYiMicroHeiMono}{WenQuanYi Micro Hei Mono}
 \newcommand{\CWM}{\CJKfamily{WenQuanYiMicroHeiMono}}  % 文泉驿等宽微米黑, WqyMono
 
+% for section, subsection, subsubsection format
+\usepackage{titlesec}
+\titleformat{\section}{\Huge\CH}{\S\,\arabic{section}}{1em}{}[]
+\titleformat{\subsection}{\Large\CH}{\S\,\arabic{section}.\arabic{subsection}}{1em}{}[]
+%\titleformat{\subsubsection}{\large\CH}{\S\,\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}{1em}{}[]
+\titleformat{\subsubsection}{\large\CH}{}{0em}{\S\,\arabic{section}.\arabic{subsection}.\arabic{subsubsection}\quad}[]
+%\setcounter{subsubsection}{1}
+
+
 % by me end
 
 
