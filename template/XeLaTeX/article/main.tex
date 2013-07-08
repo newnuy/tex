@@ -65,6 +65,16 @@
 % for math
 \usepackage{amsmath}
 
+% for international standard mathematical type setting
+\newcommand{\DF}[2]{{\displaystyle\frac{#1}{#2}}}  % keep frac font size \DF{}{}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}            % for vector \vec{}
+\newcommand{\me}{\mathrm{e}}                       % e  \me
+\newcommand{\mi}{\mathrm{i}}                       % i  \mi
+\newcommand{\dif}{\mathrm{d}}                      % df/dx  \dif
+\usepackage{pxfonts}                               % pi \piup
+\DeclareMathAlphabet{\mathsfsl}{OT1}{cmss}{m}{sl}  % matrix and second order
+\newcommand{\tensor}[1]{\mathsfsl{#1}}             %   tensor  \tensor{}
+
 
 % by me end
 
