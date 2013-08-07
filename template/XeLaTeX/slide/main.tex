@@ -2,6 +2,54 @@
 
 % \usepackage{beamerthemesplit} // Activate for custom appearance
 
+% by me begin
+
+% for font support
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% for fonts
+\setmainfont{Times New Roman}
+% for font short name
+\newfontfamily{\CZ}{Zapfino}
+
+% for line space and CJK line break
+\linespread{1.3}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+% for CJK fonts
+\usepackage{xeCJK}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+\setCJKsansfont{STSong}
+\setCJKmainfont{STKaiti}
+% for CJK font short name
+\setCJKfamilyfont{STSong}{STSong}
+\newcommand{\CS}{\CJKfamily{STSong}}                  % 华文宋体
+\setCJKfamilyfont{STHeiti}{STHeiti}
+\newcommand{\CH}{\CJKfamily{STHeiti}}                 % 华文黑体
+\setCJKfamilyfont{STKaiti}{STKaiti}
+\newcommand{\CK}{\CJKfamily{STKaiti}}                 % 华文楷体
+\setCJKfamilyfont{STFangsong}{STFangsong}
+\newcommand{\CF}{\CJKfamily{STFangsong}}              % 华文仿宋
+\setCJKfamilyfont{STLiti}{STLiti}
+\newcommand{\CL}{\CJKfamily{STLiti}}                  % 华文隶体
+\setCJKfamilyfont{STXingkai}{STXingkai}
+\newcommand{\CX}{\CJKfamily{STXingkai}}               % 华文行楷
+\setCJKfamilyfont{STXinwei}{STXinwei}
+\newcommand{\CW}{\CJKfamily{STXinwei}}                % 华文新魏
+\setCJKfamilyfont{WenQuanYiMicroHei}{WenQuanYi Micro Hei}
+\newcommand{\CWN}{\CJKfamily{WenQuanYiMicroHei}}      % 文泉驿微米黑, WqyNormal
+\setCJKfamilyfont{WenQuanYiMicroHeiMono}{WenQuanYi Micro Hei Mono}
+\newcommand{\CWM}{\CJKfamily{WenQuanYiMicroHeiMono}}  % 文泉驿等宽微米黑, WqyMono
+
+
+% by me end
+
+
 \title{Example Presentation Created with the Beamer Package}
 \author{Till Tantau}
 \date{\today}
